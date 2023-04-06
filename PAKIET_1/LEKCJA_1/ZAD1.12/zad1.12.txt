@@ -1,0 +1,7 @@
+Zadanie 1.2 zawiera ukryty sens danych. Opisz o co chodzi i co z tego wynika.
+
+liczba 1011001 w tabeli kodów ASCII odpowiada literze "Y"
+liczba 01001111 w tabeli kodów ASCII odpowiada literze "O"
+liczba 1010101 w tabeli kodów ASCII odpowiada literze "U"
+
+Po złożeniu, odpowiadających danym liczbom, liter otrzymujemy wyraz "YOU", taki sam jak w "stringu" z zadania.
