@@ -10,12 +10,12 @@ string writeline(char znak, int liczba)
     {
         return writeline(znak, liczba - 1) + znak;
     }
-    return znak;
+    return "";
 }
 
 int main()
 {
-    cout << writeline('n', 10);
+    cout << writeline('$', 2);
 
     return 0;
 }

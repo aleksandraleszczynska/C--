@@ -16,17 +16,17 @@ int power3(int x, int n)
     }
     if (n % 2 == 0)
     {
-        return power3(x, n/2)*power3(x, 2);
+        return power3(x, n / 2) * power3(x, n / 2);
     }
     if (n % 2 != 0)
     {
-        return x;
+        return x * power3(x, n / 2) * power3(x, n / 2);
     }
 }
 
 int main()
 {
-    cout << power3(3, 4);
+    cout << power3(2, 3);
 
     return 0;
 }

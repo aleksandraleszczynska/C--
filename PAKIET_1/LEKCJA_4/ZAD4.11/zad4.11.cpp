@@ -19,7 +19,7 @@ int Silnia(int n)
 
 int main()
 {
-    cout << Silnia(5);
+    cout << Silnia(3);
 
     return 0;
 }
