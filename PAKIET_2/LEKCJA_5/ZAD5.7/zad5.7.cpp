@@ -23,14 +23,34 @@ int main()
 
     for (int i = 0; i < rowCount; i++)
     {
-        for (int j = 0; j < columnCount; j = j + 2)
+        int licznik = 0;
+
+        int j = i;
+
+        while (licznik < 2)
         {
+
             if (tablica[i][j] > max)
             {
                 max = tablica[i][j];
             }
+
+            j = columnCount - 1 - i;
+
+            licznik++;
         }
     }
+
+    for (int i = 0; i < rowCount; i++)
+    {
+        for (int j = 0; j < columnCount; j++)
+        {
+            cout << tablica[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "maksymalny element na przekatnych to: " << max;
 
     return 0;
 }
