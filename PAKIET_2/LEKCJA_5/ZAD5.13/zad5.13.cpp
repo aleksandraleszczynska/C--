@@ -1,35 +1,15 @@
-// Napisz program, wypisujący wszystkie liczby pierwsze z tablicy dwuwymiarowej.
+//Napisz program, który transponuje macierz - zamieni wiersze w kolumny i kolumny w wiersze.
 
 #include <iostream>
 
 using namespace std;
-
-bool CzyLiczbaJestPierwsza(int liczba)
-{
-    bool flaga = true;
-
-    if(liczba <= 1)
-    {
-        flaga = false;
-    }
-
-    for (int l = 2; l < liczba; l++)
-    {
-        if (liczba % l == 0)
-        {
-            flaga = false;
-            break;
-        }
-    }
-
-    return flaga;
-}
 
 int main()
 {
     int rowCount = 3;
     int columnCount = 3;
     int tablica[rowCount][columnCount];
+    int tablica2[rowCount][columnCount];
 
     for (int i = 0; i < rowCount; i++)
     {
@@ -40,7 +20,7 @@ int main()
         }
     }
 
-     for (int i = 0; i < rowCount; i++)
+    for (int i = 0; i < rowCount; i++)
     {
         for (int j = 0; j < columnCount; j++)
         {
@@ -49,17 +29,23 @@ int main()
         cout << endl;
     }
 
-    cout << "Liczby pierwsze z tablicy to: ";
+    cout << endl;
 
     for (int i = 0; i < rowCount; i++)
     {
         for (int j = 0; j < columnCount; j++)
         {
-            if (CzyLiczbaJestPierwsza(tablica[i][j]) == true)
-            {
-                cout << tablica[i][j] << " ";
-            }
+            tablica2[j][i] = tablica[i][j];
         }
+    }
+
+    for (int i = 0; i < rowCount; i++)
+    {
+        for (int j = 0; j < columnCount; j++)
+        {
+            cout << tablica2[i][j] << " ";
+        }
+        cout << endl;
     }
 
     return 0;
