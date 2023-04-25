@@ -1,0 +1,2 @@
+Ilosc hasel z parzysta liczba znakow: 106
+Ilosc hasel z nieparzysta liczba znakow: 95
