@@ -1,0 +1,1 @@
+Liczba z pliku, której suma cyfr jest największa to 187869866 a liczba z tego pliku, której suma cyfr jest najmniejsza to 10010
