@@ -1,0 +1,20 @@
+CYFRY
+a) 495
+b) Liczba z pliku, której suma cyfr jest największa to 187869866, a liczba z tego pliku, której suma cyfr jest najmniejsza to 10010
+c) 
+22229
+2389
+22679
+26679
+23567
+123456789
+1556
+588
+16778
+1447
+23447
+3468
+NAPISY
+a) 505
+b) 1001
+c) 1001

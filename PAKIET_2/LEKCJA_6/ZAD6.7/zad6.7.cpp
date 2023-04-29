@@ -12,12 +12,12 @@ bool CzyRosnacy(string liczba)
 {
     for (int i = 0; i < liczba.length() - 1; i++)
     {
-        if (liczba[i] > liczba[i + 1])
+        if ((int)liczba[i] > (int)liczba[i + 1])
         {
             return false;
         }
-        return true;
     }
+    return true;
 }
 
 int main()
@@ -26,7 +26,9 @@ int main()
     ofstream zapis;
     string liczba;
     plik.open("cyfry.txt");
-    zapis.open("zadanie4c.txt");
+    zapis.open("../PLIKI/zadanie4.txt", ios::out | ios::app);
+
+    zapis << "c) " << endl;
 
     while (!plik.eof())
     {

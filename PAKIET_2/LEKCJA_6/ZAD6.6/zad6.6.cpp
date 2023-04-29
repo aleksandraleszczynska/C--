@@ -28,7 +28,7 @@ int main()
     ofstream zapis;
     int liczba;
     plik.open("cyfry.txt");
-    zapis.open("zadanie4b.txt");
+    zapis.open("../PLIKI/zadanie4.txt", ios::out | ios::app);
     plik >> liczba;
     int zmienna1 = liczba;
     int zmienna2 = liczba;
@@ -47,7 +47,8 @@ int main()
         }
     }
 
-    zapis << "Liczba z pliku, której suma cyfr jest największa to " << zmienna1 << " a liczba z tego pliku, której suma cyfr jest najmniejsza to " << zmienna2;
+    zapis << "b) "
+          << "Liczba z pliku, której suma cyfr jest największa to " << zmienna1 << ", a liczba z tego pliku, której suma cyfr jest najmniejsza to " << zmienna2 << endl;
 
     zapis.close();
 

@@ -24,7 +24,9 @@ int main()
     int liczba;
     int licznik = 0;
     plik.open("cyfry.txt");
-    zapis.open("zadanie4a.txt");
+    zapis.open("../PLIKI/zadanie4.txt", ios::out | ios::app);
+
+    zapis << "CYFRY" << endl;
 
     while (!plik.eof())
     {
@@ -36,7 +38,7 @@ int main()
         }
     }
 
-    zapis << licznik << endl;
+    zapis << "a) " << licznik << endl;
 
     zapis.close();
 
