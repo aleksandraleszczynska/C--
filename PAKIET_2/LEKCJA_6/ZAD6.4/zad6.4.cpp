@@ -10,9 +10,9 @@ using namespace std;
 
 bool funkcja(string slowo)
 {
-    for (int i = 0; i < slowo.length(); i++)
+    for (int i = 0; i < slowo.length() - 1; i++)
     {
-        if ((char)slowo[i] + (char)slowo[i + 1] == 220)
+        if (slowo[i] + slowo[i + 1] == 220)
         {
             return true;
         }

@@ -10,18 +10,18 @@ using namespace std;
 
 bool CzyJednakoweLiczby(string napis)
 {
-    char liczba = napis[0];
+    char cyfra = napis[0];
     bool flaga = true;
 
-    for (int i = 1; i < napis.length() - 1; i++)
+    for (int i = 1; i < napis.length() - 2; i++)
     {
-        if(napis[i] != liczba)
+        if (napis[i] != cyfra)
         {
-           flaga = false;
+            flaga = false;
         }
     }
 
-    if (flaga = true)
+    if (flaga == true)
     {
         return true;
     }
@@ -32,7 +32,8 @@ int main()
     fstream plik;
     ofstream zapis;
     string napis;
-    int licznik = 0;
+    int licznik0 = 0;
+    int licznik1 = 0;
     plik.open("napisy.txt");
     zapis.open("../PLIKI/zadanie4.txt", ios::out | ios::app);
     zapis << "c) ";
@@ -41,13 +42,18 @@ int main()
     {
         plik >> napis;
 
-        if (CzyJednakoweLiczby(napis) == true)
+        if (CzyJednakoweLiczby(napis) == true && napis[0] == '0')
         {
-            licznik++;
+            licznik0++;
+        }
+        if (CzyJednakoweLiczby(napis) == true && napis[0] == '1')
+        {
+            licznik1++;
         }
     }
 
-    zapis << licznik << endl;
+    zapis << "Ilosc liczb z zerami: " << licznik0 << endl;
+    zapis << "Ilosc liczb z jedynkami: " << licznik1 << endl;
 
     zapis.close();
 

@@ -8,43 +8,30 @@
 
 using namespace std;
 
-int IloscZnakow(string napis, int k)
-{
-    int licznik = 0;
-    fstream plik;
-
-    while (!plik.eof())
-    {
-        plik >> napis;
-
-        if (napis.length() == k)
-        {
-            licznik++;
-        }
-        return licznik;
-    }
-}
-
 int main()
 {
     fstream plik;
     ofstream zapis;
-    string linia;
+    string napis;
+    int tablica[15] = {0};
     plik.open("napisy.txt");
     zapis.open("../PLIKI/zadanie4.txt", ios::out | ios::app);
 
     zapis << "d) ";
 
-    int k = 2;
-
     while (!plik.eof())
     {
-        plik >> linia;
-
-        zapis << "Dla k = " << k << " w pliku znajduje sie " << IloscZnakow(linia, k) << " napisow o dlugosci k" << endl;
-
-        k++;
+        plik >> napis;
+        int dlugosc = napis.length();
+        tablica[dlugosc - 2] = tablica[dlugosc - 2] + 1;
     }
+
+    for (int k = 2; k < 17; k++)
+    {
+        zapis << "Dla k = " << k << " w pliku znajduje sie " << tablica[k-2] << " napisow o dlugosci k" << endl;
+    }
+
+    zapis.close();
 
     return 0;
 }

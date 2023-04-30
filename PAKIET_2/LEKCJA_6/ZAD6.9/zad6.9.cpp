@@ -13,13 +13,13 @@ bool CzyTyleSamo0i1(string napis)
     int zera = 0;
     int jedynki = 0;
 
-    for (int i = 0; i < napis.length(); i++)
+    for (int i = 0; i < napis.length() - 1 ; i++)
     {
-        if(napis[i] = '0')
+        if(napis[i] == '0')
         {
             zera++;
         }
-        if(napis[i] = '1')
+        if(napis[i] == '1')
         {
             jedynki++;
         }

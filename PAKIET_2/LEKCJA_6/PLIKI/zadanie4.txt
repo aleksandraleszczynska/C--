@@ -1,20 +1,28 @@
 CYFRY
 a) 495
-b) Liczba z pliku, której suma cyfr jest największa to 187869866, a liczba z tego pliku, której suma cyfr jest najmniejsza to 10010
+b) Liczba z pliku, której suma cyfr jest największa to 59, a liczba z tego pliku, której suma cyfr jest najmniejsza to 2
 c) 
-22229
 2389
-22679
-26679
 23567
 123456789
-1556
-588
-16778
-1447
-23447
 3468
 NAPISY
 a) 505
-b) 1001
-c) 1001
+b) 140
+c) Ilosc liczb z zerami: 35
+Ilosc liczb z jedynkami: 103
+d) Dla k = 2 w pliku znajduje sie 43 napisow o dlugosci k
+Dla k = 3 w pliku znajduje sie 38 napisow o dlugosci k
+Dla k = 4 w pliku znajduje sie 37 napisow o dlugosci k
+Dla k = 5 w pliku znajduje sie 57 napisow o dlugosci k
+Dla k = 6 w pliku znajduje sie 53 napisow o dlugosci k
+Dla k = 7 w pliku znajduje sie 68 napisow o dlugosci k
+Dla k = 8 w pliku znajduje sie 78 napisow o dlugosci k
+Dla k = 9 w pliku znajduje sie 103 napisow o dlugosci k
+Dla k = 10 w pliku znajduje sie 83 napisow o dlugosci k
+Dla k = 11 w pliku znajduje sie 90 napisow o dlugosci k
+Dla k = 12 w pliku znajduje sie 86 napisow o dlugosci k
+Dla k = 13 w pliku znajduje sie 81 napisow o dlugosci k
+Dla k = 14 w pliku znajduje sie 68 napisow o dlugosci k
+Dla k = 15 w pliku znajduje sie 59 napisow o dlugosci k
+Dla k = 16 w pliku znajduje sie 56 napisow o dlugosci k

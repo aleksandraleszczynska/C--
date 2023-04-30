@@ -8,20 +8,21 @@
 
 using namespace std;
 
-bool CzyParzysta(int liczba)
+bool CzyParzysta(string liczba)
 {
-    if (liczba % 2 != 0)
+    char ostatniznak = liczba[liczba.length() - 1];
+    if (ostatniznak == '0' || ostatniznak == '2' || ostatniznak == '4' || ostatniznak == '6' || ostatniznak == '8')
     {
-        return false;
+        return true;
     }
-    return true;
+    return false;
 }
 
 int main()
 {
     fstream plik;
     ofstream zapis;
-    int liczba;
+    string liczba;
     int licznik = 0;
     plik.open("cyfry.txt");
     zapis.open("../PLIKI/zadanie4.txt", ios::out | ios::app);

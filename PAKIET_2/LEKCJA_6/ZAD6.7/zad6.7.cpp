@@ -12,7 +12,7 @@ bool CzyRosnacy(string liczba)
 {
     for (int i = 0; i < liczba.length() - 1; i++)
     {
-        if ((int)liczba[i] > (int)liczba[i + 1])
+        if (liczba[i] >= liczba[i + 1])
         {
             return false;
         }

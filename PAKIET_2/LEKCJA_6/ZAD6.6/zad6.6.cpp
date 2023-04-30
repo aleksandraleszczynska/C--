@@ -8,15 +8,14 @@
 
 using namespace std;
 
-int SumaCyfr(int liczba)
+int SumaCyfr(string liczba)
 {
     int suma = 0;
 
-    while (liczba > 0)
+    for (int i = 0; i < liczba.length(); i++)
     {
-        int cyfra = liczba % 10;
+        int cyfra = liczba[i] - 48;
         suma = suma + cyfra;
-        liczba = liczba / 10;
     }
 
     return suma;
@@ -26,29 +25,31 @@ int main()
 {
     fstream plik;
     ofstream zapis;
-    int liczba;
+    string liczba;
     plik.open("cyfry.txt");
     zapis.open("../PLIKI/zadanie4.txt", ios::out | ios::app);
     plik >> liczba;
-    int zmienna1 = liczba;
-    int zmienna2 = liczba;
+    int najwieksza = 0;
+    int najmniejsza = 81;
 
     while (!plik.eof())
     {
         plik >> liczba;
 
-        if (SumaCyfr(liczba) > SumaCyfr(zmienna1))
+        int suma = SumaCyfr(liczba);
+
+        if (suma > najwieksza)
         {
-            zmienna1 = liczba;
+            najwieksza = suma;
         }
-        if (SumaCyfr(liczba) < SumaCyfr(zmienna2))
+        if (suma < najmniejsza)
         {
-            zmienna2 = liczba;
+            najmniejsza = suma;
         }
     }
 
-    zapis << "b) "
-          << "Liczba z pliku, której suma cyfr jest największa to " << zmienna1 << ", a liczba z tego pliku, której suma cyfr jest najmniejsza to " << zmienna2 << endl;
+    zapis << "b) ";
+    zapis << "Liczba z pliku, której suma cyfr jest największa to " << najwieksza << ", a liczba z tego pliku, której suma cyfr jest najmniejsza to " << najmniejsza << endl;
 
     zapis.close();
 
