@@ -10,24 +10,17 @@
 
 using namespace std;
 
-bool Czysiepowtarza(string slowo1, string slowo2)
-{
-    if (slowo1 == slowo2)
-    {
-        return true;
-    }
-    return false;
-}
+ string lustrzaneodbicie(string slowo2)
+ {
+    string odwroconeslowo2;
 
-// bool Czylustrzaneodbicie(string slowo1, string slowo2)
-// {
-//    for (int i = 0; i < slowo1.length()-1; i++)
-//    {
-//     char pierwsza = slowo1[0];
-//     slowo1[i] = slowo1[i+1];
-//     slowo1[slowo1.length() - 1] = pierwsza;
-//    }
-// }
+    for (int i = slowo2.length() - 1; i >= 0; i--)
+    {
+     odwroconeslowo2 += slowo2[i];
+    }
+
+    return odwroconeslowo2;
+ }
 int main()
 {
     fstream plik1, plik2;
@@ -38,34 +31,43 @@ int main()
     string slowo1, slowo2;
     zapis << "b) ";
 
-    while (!plik2.eof())
+    string tablica[25];
+    int tablica2[25] = {0};
+    string tablica3[25];
+    int tablica4[25] = {0};
+
+    for (int i = 0; i < 25; i++)
     {
         plik2 >> slowo2;
-
-        zapis << slowo2;
-
-        int licznik1 = 0;
-        int licznik2 = 0;
-
-        while (!plik1.eof())
-        {
-            plik1 >> slowo1;
-
-            if (Czysiepowtarza(slowo1, slowo2) == true)
-            {
-                licznik1++;
-            }
-
-            // if (Czylustrzaneodbicie(slowo1, slowo2) == true)
-            // {
-            //     licznik2++;
-            // }
-        }
-
-        zapis << " : " << licznik1 << " " << licznik2 << endl;
+        tablica[i] = slowo2;
+        tablica3[i] = lustrzaneodbicie(slowo2);
     }
 
-    zapis.close();
 
-    return 0;
-}
+    while (!plik1.eof())
+    {
+        plik1 >> slowo1;
+
+        for (int i = 0; i < 25; i++)
+        {
+            if (slowo1 == tablica[i])
+            {
+                tablica2[i] = tablica2[i] + 1;
+            }
+            if (slowo1 == tablica3[i])
+            {
+                tablica4[i] = tablica4[i] + 1;
+            }
+
+        }
+    }
+
+        for (int i = 0; i < 25; i++)
+        {
+            zapis << tablica[i] << " " << tablica2[i] << " " << tablica4[i] << endl;
+        }
+
+        zapis.close();
+
+        return 0;
+    }

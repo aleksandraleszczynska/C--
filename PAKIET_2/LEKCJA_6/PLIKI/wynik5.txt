@@ -10,29 +10,28 @@ dla liczby n :9 w w pliku znajduje sie 81 slow n-literowych
 dla liczby n :10 w w pliku znajduje sie 62 slow n-literowych
 dla liczby n :11 w w pliku znajduje sie 102 slow n-literowych
 dla liczby n :12 w w pliku znajduje sie 94 slow n-literowych
-b) hxqsf : 4 0
-erraegrdsju : 0 0
-cpcxpzj : 0 0
-arphlqleftqm : 0 0
-wdt : 0 0
-dohzvwt : 0 0
-bpgy : 0 0
-uxmwceunjvol : 0 0
-ilgpjtqibbq : 0 0
-mfgoqaznahf : 0 0
-evyiolwscoj : 0 0
-wyv : 0 0
-csuhvnnkgnx : 0 0
-fory : 0 0
-hqtbdk : 0 0
-pjkrdku : 0 0
-culp : 0 0
-lntslth : 0 0
-uiizzqjm : 0 0
-mta : 0 0
-lhsisobbb : 0 0
-d : 0 0
-li : 0 0
-tbbw : 0 0
-rceij : 0 0
-rceij : 0 0
+b) hxqsf 4 5
+erraegrdsju 7 1
+cpcxpzj 3 1
+arphlqleftqm 10 1
+wdt 0 4
+dohzvwt 6 1
+bpgy 2 1
+uxmwceunjvol 11 1
+ilgpjtqibbq 5 1
+mfgoqaznahf 5 4
+evyiolwscoj 5 0
+wyv 0 7
+csuhvnnkgnx 0 4
+fory 5 0
+hqtbdk 5 5
+pjkrdku 4 5
+culp 4 2
+lntslth 4 5
+uiizzqjm 2 5
+mta 4 8
+lhsisobbb 4 5
+d 9 9
+li 0 2
+tbbw 0 4
+rceij 5 0
