@@ -8,7 +8,7 @@
 
 using namespace std;
 
-bool funkcja(string slowo)
+bool CzySumaDwochKolejnychZnakowWynosi220(string slowo)
 {
     for (int i = 0; i < slowo.length() - 1; i++)
     {
@@ -33,7 +33,7 @@ int main()
     {
         plik >> slowo;
 
-        if (funkcja(slowo) == true)
+        if (CzySumaDwochKolejnychZnakowWynosi220(slowo) == true)
         {
             zapis << slowo << endl;
         }

@@ -13,7 +13,7 @@ bool CzyJednakoweLiczby(string napis)
     char cyfra = napis[0];
     bool flaga = true;
 
-    for (int i = 1; i < napis.length() - 2; i++)
+    for (int i = 1; i < napis.length(); i++)
     {
         if (napis[i] != cyfra)
         {

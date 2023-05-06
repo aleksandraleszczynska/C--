@@ -29,8 +29,10 @@ int main()
     plik.open("cyfry.txt");
     zapis.open("../PLIKI/zadanie4.txt", ios::out | ios::app);
     plik >> liczba;
-    int najwieksza = 0;
-    int najmniejsza = 81;
+    int najwiekszasuma = 0;
+    int najmniejszasuma = 81;
+    string najwiekszaliczba;
+    string najmniejszaliczba;
 
     while (!plik.eof())
     {
@@ -38,18 +40,20 @@ int main()
 
         int suma = SumaCyfr(liczba);
 
-        if (suma > najwieksza)
+        if (suma > najwiekszasuma)
         {
-            najwieksza = suma;
+            najwiekszasuma = suma;
+            najwiekszaliczba = liczba;
         }
-        if (suma < najmniejsza)
+        if (suma < najmniejszasuma)
         {
-            najmniejsza = suma;
+            najmniejszasuma = suma;
+            najmniejszaliczba = liczba;
         }
     }
 
     zapis << "b) ";
-    zapis << "Liczba z pliku, której suma cyfr jest największa to " << najwieksza << ", a liczba z tego pliku, której suma cyfr jest najmniejsza to " << najmniejsza << endl;
+    zapis << "Liczba z pliku, której suma cyfr jest największa to " << najwiekszaliczba << ", a liczba z tego pliku, której suma cyfr jest najmniejsza to " << najmniejszaliczba << endl;
 
     zapis.close();
 

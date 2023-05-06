@@ -1,6 +1,6 @@
 CYFRY
 a) 495
-b) Liczba z pliku, której suma cyfr jest największa to 59, a liczba z tego pliku, której suma cyfr jest najmniejsza to 2
+b) Liczba z pliku, której suma cyfr jest największa to 187869866, a liczba z tego pliku, której suma cyfr jest najmniejsza to 10010
 c) 
 2389
 23567
@@ -8,9 +8,9 @@ c)
 3468
 NAPISY
 a) 505
-b) 140
-c) Ilosc liczb z zerami: 35
-Ilosc liczb z jedynkami: 103
+b) 110
+c) Ilosc liczb z zerami: 33
+Ilosc liczb z jedynkami: 50
 d) Dla k = 2 w pliku znajduje sie 43 napisow o dlugosci k
 Dla k = 3 w pliku znajduje sie 38 napisow o dlugosci k
 Dla k = 4 w pliku znajduje sie 37 napisow o dlugosci k
