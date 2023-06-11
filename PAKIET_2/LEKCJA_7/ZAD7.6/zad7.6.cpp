@@ -5,6 +5,11 @@
 
 using namespace std;
 
+char ZamianaNaZnak(int cyfra)
+{
+    return cyfra + 48;
+}
+
 bool CzyCyfryWWektorzeTworzaPalindrom(vector<int> liczby)
 {
     vector<char> nowywektor;
@@ -22,7 +27,7 @@ bool CzyCyfryWWektorzeTworzaPalindrom(vector<int> liczby)
             while (liczba > 0)
             {
                 int cyfra = liczba % 10;
-                nowywektor.push_back(cyfra + '0');
+                nowywektor.push_back('0' + cyfra);
                 liczba = liczba / 10;
             }
         }
@@ -41,7 +46,7 @@ bool CzyCyfryWWektorzeTworzaPalindrom(vector<int> liczby)
 
 int main()
 {
-    vector<int> liczby = {1, 24, 3, 42, 1};
+    vector<int> liczby = {13, 2, 232, 23, 1};
 
     cout << CzyCyfryWWektorzeTworzaPalindrom(liczby);
 
