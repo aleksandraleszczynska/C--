@@ -1,28 +1,31 @@
 // Napisz program, który sprawdzi czy podany wzorzec zawiera się w tekście.
 
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 bool CzyWzorzecZawieraSieWTekscie(string tekst, string wzorzec)
 {
-    int licznik = wzorzec.length();
+    int licznik = 0;
 
     for (int i = 0; i < tekst.length(); i++)
     {
-        if (tekst[i] == wzorzec[i])
+        if (tekst[i] == wzorzec[licznik])
         {
-            licznik--;
+            licznik++;
         }
         else
         {
-            licznik = wzorzec.length();
-            i = 0;
+            licznik = 0;
+        }
+
+        if (licznik == wzorzec.length())
+        {
+            return true;
         }
     }
 
-    return licznik == 0;
+    return false;
 }
 
 int main()

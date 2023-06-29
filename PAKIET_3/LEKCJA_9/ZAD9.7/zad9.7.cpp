@@ -1,10 +1,10 @@
-//Napisz program, który sprawdzi czy podany wyraz jest anagramem.
+// Napisz program, który sprawdzi czy podany wyraz jest anagramem.
 
 #include <iostream>
 
 using namespace std;
 
-int IleZnakow (string slowo, char znak)
+int IleZnakow(string slowo, char znak)
 {
     int licznik = 0;
 
@@ -18,9 +18,9 @@ int IleZnakow (string slowo, char znak)
     return licznik;
 }
 
-bool CzyJestAnagramem (string slowo1, string slowo2)
+bool CzyJestAnagramem(string slowo1, string slowo2)
 {
-    if(slowo1.length() != slowo2.length())
+    if (slowo1.length() != slowo2.length())
     {
         return false;
     }
@@ -31,7 +31,6 @@ bool CzyJestAnagramem (string slowo1, string slowo2)
         {
             return false;
         }
-
     }
     return true;
 }
