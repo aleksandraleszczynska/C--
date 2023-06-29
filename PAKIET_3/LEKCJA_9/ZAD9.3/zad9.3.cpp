@@ -1,4 +1,4 @@
-// Napisz program, który obliczy iteracyjnie NWD z wpisanych przez użytkownika liczb.
+//Napisz program, który obliczy iteracyjnie NWW z wpisanych przez użytkownika liczb.
 
 #include <iostream>
 
@@ -22,8 +22,13 @@ int NWD(int liczba1, int liczba2)
 
     }
 
+    int NWW(int liczba1, int liczba2)
+    {
+        return (liczba1*liczba2)/NWD(liczba1, liczba2);
+    }
+
 int main()
 {
-    cout << NWD(30,20);
+    cout << NWW(3,4);
     return 0;
 }

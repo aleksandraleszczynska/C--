@@ -1,4 +1,4 @@
-// Napisz program, który sprawdzi czy podany wyraz jest anagramem.
+// Napisz program, który sprawdzi czy podany wyraz jest anagramem, użyj innego sposobu niż w odpowiedzi do poprzedniego zadania.
 
 #include <iostream>
 
@@ -20,14 +20,18 @@ int IleZnakow(string slowo, char znak)
 
 bool CzyJestAnagramem(string slowo1, string slowo2)
 {
-    if (slowo1.length() != slowo2.length())
+    char tablica1[26];
+    char tablica2[26];
+
+    for (int i = 0; i < 26; i++)
     {
-        return false;
+        tablica1[i] = IleZnakow(slowo1, i + 65);
+        tablica2[i] = IleZnakow(slowo2, i + 65);
     }
 
-    for (char znak = 'A'; znak <= 'Z'; znak++)
+    for (int i = 0; i < 26; i++)
     {
-        if (IleZnakow(slowo1, znak) != IleZnakow(slowo2, znak))
+        if (tablica1[i] != tablica2[i])
         {
             return false;
         }
@@ -37,6 +41,6 @@ bool CzyJestAnagramem(string slowo1, string slowo2)
 
 int main()
 {
-    cout << CzyJestAnagramem("ALAW", "AALW");
+    cout << CzyJestAnagramem("DBUTR", "RTUBD");
     return 0;
 }
