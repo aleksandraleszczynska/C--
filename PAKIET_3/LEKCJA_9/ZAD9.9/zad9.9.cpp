@@ -1,6 +1,7 @@
-//Napisz program, który sprawdzi czy podany wzorzec zawiera się w tekście.
+// Napisz program, który sprawdzi czy podany wzorzec zawiera się w tekście.
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -20,13 +21,11 @@ bool CzyWzorzecZawieraSieWTekscie(string tekst, string wzorzec)
             i = 0;
         }
     }
-    
+
     return licznik == 0;
 }
 
-
-
-int main ()
+int main()
 {
     cout << CzyWzorzecZawieraSieWTekscie("LOOOLOLOTTT", "LOT");
 
