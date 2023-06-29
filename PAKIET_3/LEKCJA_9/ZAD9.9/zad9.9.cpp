@@ -16,6 +16,10 @@ bool CzyWzorzecZawieraSieWTekscie(string tekst, string wzorzec)
         }
         else
         {
+            if (licznik > 0)
+            {
+                i = i - licznik;
+            }
             licznik = 0;
         }
 
