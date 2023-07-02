@@ -28,38 +28,42 @@ bool CzyJednakowaDlugosc(string napis1, string napis2, string napis3, string nap
     return true;
 }
 
-string SortowanieBabelkowe(string napis)
+string SortowaniePrzezWybor(string napis)
 {
-     for (int j = 0; j < napis.length(); j++)
+    for (int j = 0; j < napis.length() - 1; j++)
     {
-        for (int i = 0; i <napis.length(); i++)
+        int index = j;
+
+        for (int i = j + 1; i < napis.length(); i++)
         {
-            if (napis[i] < napis[i + 1])
+            if (napis[index] < napis[i])
             {
-                int temp = napis[i];
-                napis[i] = napis[i + 1];
-                napis[i + 1] = temp;
+                index = i;
             }
         }
+        int temp = napis[j];
+        napis[j] = napis[index];
+        napis[index] = temp;
     }
+
     return napis;
 }
 
 bool Porownanie(string napis1, string napis2, string napis3, string napis4, string napis5)
 {
-    if(SortowanieBabelkowe(napis1) != SortowanieBabelkowe(napis2))
+    if (SortowaniePrzezWybor(napis1) != SortowaniePrzezWybor(napis2))
     {
         return false;
     }
-     if(SortowanieBabelkowe(napis1) != SortowanieBabelkowe(napis3))
+    if (SortowaniePrzezWybor(napis1) != SortowaniePrzezWybor(napis3))
     {
         return false;
     }
-     if(SortowanieBabelkowe(napis1) != SortowanieBabelkowe(napis4))
+    if (SortowaniePrzezWybor(napis1) != SortowaniePrzezWybor(napis4))
     {
         return false;
     }
-     if(SortowanieBabelkowe(napis1) != SortowanieBabelkowe(napis5))
+    if (SortowaniePrzezWybor(napis1) != SortowaniePrzezWybor(napis5))
     {
         return false;
     }
