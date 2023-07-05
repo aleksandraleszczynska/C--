@@ -8,7 +8,7 @@ int Silnia(int liczba)
 {
     if (liczba == 0)
     {
-        return 0;
+        return 1;
     }
     if (liczba == 1)
     {

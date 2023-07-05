@@ -3,10 +3,8 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void Sortowaniebabelkowe(int tablica[])
 {
-    int tablica[5] = {8, 5, 3, 4, 9};
-
     for (int j = 0; j < 4; j++)
     {
         for (int i = 0; i < 4; i++)
@@ -19,6 +17,14 @@ int main()
             }
         }
     }
+
+}
+
+int main()
+{
+    int tablica[5] = {8, 5, 3, 4, 9};
+
+    Sortowaniebabelkowe(tablica);
 
     for (int i = 0; i < 5; i++)
     {
