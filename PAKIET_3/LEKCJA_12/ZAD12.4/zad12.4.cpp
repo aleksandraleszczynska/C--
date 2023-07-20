@@ -1,0 +1,1 @@
+//Napisz program, który posortuje tablicę rosnąco za pomocą zmodyfikowanego algorytmu sortowania szybkiego, w którtym pivotem jest losowy indeks z przedziału od lewegoIndexu do prawego, wykonywanego podproblemu. Losowanie liczby z danego zakresu znajdziesz z użyciem wujka google 😃
