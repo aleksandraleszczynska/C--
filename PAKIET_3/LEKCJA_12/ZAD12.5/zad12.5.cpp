@@ -40,7 +40,7 @@ void quicksort(int tab[], int lewy, int prawy)
 
 int main()
 {
-    int tablica[5] = {3, 6, 2, 1, 4};
+    int tablica[5] = {3, 6, 7, 1, 4};
     int lewy = 0;
     int prawy = 4;
     quicksort(tablica, lewy, prawy);

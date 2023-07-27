@@ -39,13 +39,13 @@ void merge(int tablica[], int lewyIndex, int pivot, int prawyIndex, int pomocnic
     }
 }
 
-void mergerSort(int tablica[], int lewyIndex, int prawyIndex, int pomocniczaTablica[])
+void mergerSort(int iloscwierszy,int tablica[][], int lewyIndex, int prawyIndex, int pomocniczaTablica[])
 {
     if (lewyIndex != prawyIndex)
     {
         int pivot = (lewyIndex + prawyIndex) / 2;
-        mergerSort(tablica, lewyIndex, pivot, pomocniczaTablica);
-        mergerSort(tablica, pivot + 1, prawyIndex, pomocniczaTablica);
+        mergerSort(iloscwierszy,tablica, lewyIndex, pivot, pomocniczaTablica);
+        mergerSort(iloscwierszy,tablica, pivot + 1, prawyIndex, pomocniczaTablica);
         merge(tablica, lewyIndex, pivot, prawyIndex, pomocniczaTablica);
     }
 }
@@ -78,7 +78,7 @@ int main()
             tablica2[i] = tablica1[j][i];
         }
 
-        mergerSort(tablica2, lewyIndex, prawyIndex, pomocniczaTablica);
+        mergerSort(wiersze,tablica1, lewyIndex, prawyIndex, pomocniczaTablica);
 
         for (int i = 0; i < kolumny; i++)
         {

@@ -42,13 +42,13 @@ void quicksort(int tablica[], int lewyindex, int prawyindex, int pivotindex)
 
 int main()
 {
-    int tablica[7] = {1, 5, 2, 7, 1, 3, 4};
+    int tablica[8] = {3, 5, 1, 2, 7, 8, 1, 9};
     int lewy = 0;
-    int prawy = 6;
-    int pivotindex = 3;
+    int prawy = 7;
+    int pivotindex = 2;
     quicksort(tablica, lewy, prawy, pivotindex);
 
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < 8; i++)
     {
         cout << tablica[i] << " ";
     }
