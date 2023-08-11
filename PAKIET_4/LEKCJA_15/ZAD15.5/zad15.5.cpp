@@ -1,0 +1,1 @@
+//Zrealizuj program deszyfrujący algorytmu z zadania 15.4.

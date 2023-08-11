@@ -1,0 +1,1 @@
+//Narysuj drzewo wywołań rekurencyjnych algorytmu z zadania 15.1 dla 5-ciu krążków, jako odpowiedź do zadania wklej link do udostępnionego zdjęcia/pliku.
