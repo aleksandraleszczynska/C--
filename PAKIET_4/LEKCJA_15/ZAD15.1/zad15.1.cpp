@@ -16,7 +16,7 @@ string Hanoi(int n, char a, char b, char c)
 
 int main()
 {
-    int n = 4;
+    int n = 2;
     cout << Hanoi(n, 'A', 'B', 'C');
     return 0;
 }

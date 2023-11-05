@@ -17,23 +17,23 @@ string Hanoi(int n, char a, char b, char c)
 
     while (licznik < granica)
     {
-        if (licznik == (granica / 2) + 1)
+        if (licznik == (granica / 2))
         {
             odpowiedz = odpowiedz + a + c;
             licznik++;
         }
-        if (n % 2 == 0 && licznik != (granica / 2) + 1)
+        else if (n % 2 == 0 && licznik != (granica / 2))
         {
-            odpowiedz = odpowiedz + pierwszy + drugi + pierwszy + trzeci;
-            licznik = licznik + 2;
+            odpowiedz = odpowiedz + pierwszy + drugi + pierwszy + trzeci + drugi + trzeci;
+            licznik = licznik + 3;
         }
-        if (n % 2 != 0 && licznik != (granica / 2) + 1)
+        else if (n % 2 != 0 && licznik != (granica / 2))
         {
-            odpowiedz = odpowiedz + pierwszy + trzeci + pierwszy + drugi;
-            licznik = licznik + 2;
+            odpowiedz = odpowiedz + pierwszy + trzeci + pierwszy + drugi + trzeci + drugi;
+            licznik = licznik + 3;
         }
 
-        if (licznik % 2 == 0)
+        if (n % 2 == 0)
         {
             pierwszy = a;
             drugi = c;
